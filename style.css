@@ -1,0 +1,68 @@
+#absently-popup {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    max-width: 280px;
+    max-height: 160px;
+    font-family: sans-serif;
+    overflow: hidden;
+    pointer-events: auto;
+  }
+  
+  #absently-box {
+    background: #1e1e1e;
+    color: #fff;
+    padding: 16px;
+    border-radius: 12px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.4);
+    text-align: left;
+    overflow: hidden;
+  }
+  
+  #absently-cancel {
+    margin-top: 12px;
+    padding: 6px 12px;
+    border: none;
+    background: #333;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  #absently-cancel:hover {
+    background: #444;
+  }
+  
+  body {
+    background-color: #1e1e1e;
+    color: white;
+    font-family: sans-serif;
+    padding: 20px;
+    width: 240px;
+  }
+  
+  h2 {
+    margin-top: 0;
+    font-size: 18px;
+  }
+  
+  p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  #sendExcuseBtn {
+    margin-top: 16px;
+    padding: 6px 12px;
+    background: #222;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  #sendExcuseBtn:hover {
+    background: #444;
+  }
+  
+  

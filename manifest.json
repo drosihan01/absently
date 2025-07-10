@@ -1,0 +1,48 @@
+{
+    "manifest_version": 3,
+    "name": "Absently",
+    "version": "1.0",
+    "description": "Auto-sends a message in Teams if a meeting is missed.",
+    "permissions": [
+      "scripting",
+      "activeTab",
+      "tabs",
+      "storage",
+      "clipboardRead", 
+      "clipboardWrite", 
+      "scripting", 
+      "activeTab"
+    ],
+    "host_permissions": [
+      "https://teams.microsoft.com/*",
+      "https://teams.live.com/*",
+      "<all_urls>"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    },
+    "content_scripts": [
+      {
+        "matches": [
+          "https://teams.microsoft.com/*",
+          "https://teams.live.com/*"
+        ],
+        "js": ["content.js"]
+      }
+    ],
+    "action": {
+      "default_title": "Open Absently",
+      "default_icon": {
+        "16": "assets/icon.png",
+        "48": "assets/icon.png",
+        "128": "assets/icon.png"
+      }
+    },
+    "web_accessible_resources": [
+      {
+        "resources": ["style.css"],
+        "matches": ["<all_urls>"]
+      }
+    ]
+  }
+  
