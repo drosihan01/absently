@@ -30,12 +30,17 @@
         "js": ["content.js"]
       }
     ],
+    "icons": {
+      "16": "assets/icons/icon-s.png",
+      "48": "assets/icons/icon-m.png",
+      "128": "assets/icons/icon-l.png"
+    },
     "action": {
       "default_title": "Open Absently",
       "default_icon": {
-        "16": "assets/icon.png",
-        "48": "assets/icon.png",
-        "128": "assets/icon.png"
+        "16": "assets/icons/icon-s.png",
+        "48": "assets/icons/icon-m.png",
+        "128": "assets/icons/icon-l.png"
       }
     },
     "web_accessible_resources": [
