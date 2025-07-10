@@ -2,7 +2,7 @@
 
 console.log("✅ Absently content.js loaded");
 
-const excuseMessage = "Hey team, ran into tech issues. Here's my update: [fill in]";
+const excuseMessage = "Hey, something urgent just came up and I won’t be able to join live. Will loop back later!";
 
 // 🧠 Simulate human-like click interactions
 function triggerMouseEvents(element) {
@@ -71,7 +71,7 @@ function showPopupWithCountdown() {
     document.body.appendChild(popup);
     makePopupDraggable(popup, document.getElementById("absently-box"));
   
-    let countdown = 60;
+    let countdown = 10;
     const timer = setInterval(() => {
       countdown--;
       const timerEl = document.getElementById("absently-timer");
@@ -126,7 +126,7 @@ function showPopupWithCountdown() {
 
 // 🔁 Smart + Reliable Message Sender (Now with Popup Close)
 function openPreviewAndSend() {
-    const excuseMessage = "Hey team, ran into tech issues. Here's my update: [fill in]";
+    const excuseMessage = "Hey team, Hey, something urgent just came up and I won’t be able to join live. Will loop back later!";
   
     navigator.clipboard.writeText(excuseMessage).then(() => {
       console.log("📋 Clipboard populated with excuse.");
